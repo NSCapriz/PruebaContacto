@@ -1,0 +1,230 @@
+@import url("https://fonts.googleapis.com/css2?family=Dosis&family=Tangerine&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dosis&family=Tangerine&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #FFECCC;
+}
+
+p {
+  font-family: "Dosis", sans-serif;
+  font-size: 1.1rem;
+}
+
+h1 {
+  font-family: "Tangerine", cursive;
+}
+
+h2 {
+  font-family: "Tangerine", cursive;
+}
+
+h3 {
+  font-family: "Tangerine", cursive;
+  font-size: 2.3rem;
+  font-weight: bold;
+  margin-top: 0.5rem;
+}
+
+@keyframes aparecer {
+  0% {
+    opacity: 0;
+    filter: blur(20px);
+  }
+  10% {
+    opacity: 1;
+    filter: brightness(2) blur(10px);
+  }
+}
+@keyframes entrance {
+  0% {
+    text-align: start;
+    opacity: 0;
+    filter: blur(20px);
+    left: 0px;
+    top: 0px;
+  }
+  100% {
+    opacity: 1;
+    filter: brightness(2) blur(5px);
+  }
+}
+.header__container {
+  background-color: #EFB96F;
+}
+.header__container .navbar--logo {
+  width: 6rem;
+}
+.header__container .navbar--type {
+  font-family: "Tangerine", cursive;
+}
+.header__container .nav-link--color {
+  color: #8C4F2B;
+}
+.header__container .nav-link--color:hover {
+  text-decoration: underline;
+}
+
+footer {
+  color: #ffffff;
+  background-color: #665B4F;
+  text-align: center;
+  height: 6.25rem;
+}
+footer div p {
+  margin-bottom: 1rem;
+  padding-top: 1rem;
+  font-weight: bold;
+}
+footer div img {
+  width: 2rem;
+  height: 2rem;
+}
+
+.container--titulo {
+  height: 10rem;
+  background: #665B4F;
+  background: linear-gradient(17deg, #665B4F 37%, #887257 70%, #be996c 100%);
+  color: #ffffff;
+  font-family: "Tangerine", cursive;
+  padding: 1.1rem;
+}
+.container--titulo h1 {
+  position: relative;
+  animation-name: entrance;
+  animation-duration: 0.7s;
+}
+
+.container__logo {
+  background-color: #EFB96F;
+}
+
+.link--iconos {
+  width: 4rem;
+  height: 4rem;
+  margin: 1rem;
+  transition: height 0.5s, width 0.5s;
+}
+.link--iconos:hover {
+  transform: scale(2, 2);
+}
+
+.ribeteFlores {
+  width: 50rem;
+}
+
+.container--foto {
+  animation: aparecer 2s ease;
+}
+
+.container--text {
+  text-align: justify;
+}
+
+.text--invitacion {
+  font-family: "Tangerine", cursive;
+}
+
+@media (min-width: 768px) {
+  .text--frase {
+    text-decoration: overline;
+  }
+}
+.container__categorias {
+  background-color: #FFEAED;
+  border: solid;
+  border-color: #DBC6DD;
+}
+.container__categorias h2 {
+  color: #667AAE;
+}
+.container__categorias .container__categorias--inicio {
+  background-color: #FCD0FF;
+  color: #667AAE;
+  font-family: "Tangerine", cursive;
+  border-bottom: solid #DBC6DD;
+}
+.container__categorias .container__categorias--inicio a:hover {
+  text-decoration: underline;
+}
+.container__categorias .link--categoria {
+  color: #667AAE;
+  font-family: "Tangerine", cursive;
+  font-size: 2rem;
+}
+.container__categorias .link--categoria:hover {
+  color: #665B4F;
+}
+
+.container__comprar {
+  background-color: #FCD0FF;
+  border: solid #DBC6DD;
+}
+.container__comprar button {
+  width: 4rem;
+  border: solid #005B4C;
+  color: #005B4C;
+  background-color: transparent;
+  transition: all 0.5s;
+}
+.container__comprar button:hover {
+  width: auto;
+  border-radius: solid 0.5rem 2px;
+  border-color: transparent;
+  color: #ffffff;
+  background-color: #F29494;
+  box-shadow: 0 0.3rem 0.3rem 0 rgb(0, 0, 0);
+  letter-spacing: 1ch;
+}
+
+.container__productos img {
+  box-shadow: 0 0.5rem 1rem 0 rgb(0, 0, 0);
+}
+
+.container__infocantidades {
+  background-color: #A6AD63;
+  border: solid #005B4C;
+}
+
+.container__combos img {
+  box-shadow: 0 0.5rem 1rem 0 rgb(0, 0, 0);
+}
+.container__combos button {
+  width: 3.5rem;
+  border: solid #005B4C;
+  color: #005B4C;
+  background-color: transparent;
+  transition: all 0.5s;
+}
+.container__combos button:hover {
+  width: auto;
+  border-radius: solid 0.5rem 2px;
+  border-color: transparent;
+  color: #ffffff;
+  background-color: #F29494;
+  box-shadow: 0 0.3rem 0.3rem 0 rgb(0, 0, 0);
+  letter-spacing: 1ch;
+  font-weight: bold;
+}
+
+.container__link--inicio li {
+  color: #8C4F2B;
+  font-family: "Dosis", sans-serif;
+}
+.container__link--inicio a {
+  text-decoration: underline;
+}
+.container__link--inicio a:hover {
+  color: #005B4C;
+}
+
+.container__qr .container__qr--imagen {
+  width: 15rem;
+  height: 15rem;
+}
+
+/*# sourceMappingURL=styles.css.map */
