@@ -1,12 +1,159 @@
+
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <!---------------------SEOTITULO----------------------->
+    <title>Victoria's Bakery | Contacto</title>
+    <!------------------FIN SEOTITULO---------------------->
+    <!----------------METADESCRIPTION---------------------->
+    <meta name="description" content="Si deseas adquirir alguno de mis productos, realizar algún pedido especial, o simplemente queres realizarme alguna consulta, no dudes en contactarme.">
+    <meta name="keywords" content="contacto, pastelería, artesanal, torta, productos, eventos, redes sociales">
+    <!------------FIN METADESCRIPTION---------------------->
+    <!-----------------------FAVICON----------------------->
+    <link rel="shortcut icon" href="../img/favicono.ico" type="Logo icono">
+    <!---------------------FIN FAVICON--------------------->
+    <!---------------------FRAMEWORKS y CSS---------------->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="../CSS/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <!-----------------FIN FRAMEWORKS Y CSS---------------->
 </head>
 <body>
-    <h1>Hola</h1>
+    <header class="container-fluid header__container">
+        <!---------------NAVBAR------------------------->
+        <nav class="navbar navbar-expand-md py-2">
+            <div class="container">
+                <a class="navbar-brand" href="../index.html">
+                    <img src="../img/logovictoria.png" alt="logo Victoria's Bakery" class="navbar--logo">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse navbar--type fw-bold fs-1" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-1">
+                        <li class="nav-item">
+                            <a class="nav-link nav-link--color mx-1" href="../index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link nav-link--color mx-1" href="sobremi.html">Sobre mí</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link nav-link--color mx-1" href="productos.html">Productos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link nav-link--color mx-1" href="eventos.html">Eventos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link nav-link--color" href="contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-----------FIN NAVBAR------------------------->
+    </header>
+    <main>
+        <!-------------------SECCIÓN--------------------> 
+        <section class="container-fluid">
+            <div class="container container__link--inicio text-center">
+                <ul class="navbar-nav fw-bolder fs-5 mt-1">
+                    <li><a class="nav-link d-inline-block" href="../index.html"> Inicio</a> / Contacto</li>
+                </ul>
+                <h1 class="display-1 fw-bold">Contactame</h1>
+            </div>
+            <div class="row gx-2 my-5">
+                <div class="col-md-6 px-5 mt-5 animate__animated animate__bounceInLeft">
+                    <!------------------FORMULARIO-------------------->
+                    <form class="border border-dark p-2">
+                        <fieldset>
+                            <legend class="text-center p-3"><h2 class="display-4 fw-semibold">Completá el formulario para poder contactarme...</h2></legend>
+                            <div class="mb-3">
+                                <label for="exampleInput" class="form-label fw-bold">Nombre:</label>
+                                <input type="email" class="form-control">
+                            </div>
+                            <div class="mb-3">
+                                <label for="exampleInput" class="form-label fw-bold">Email:</label>
+                                <input type="email" class="form-control">
+                            </div>
+                            <div class="mb-3">
+                                <label for="exampleInput" class="form-label fw-bold">Teléfono:</label>
+                                <input type="email" class="form-control">
+                            </div>
+                            <div class="mb-3">
+                                <label for="exampleFormControlTextarea1" class="form-label fw-bold">Consultas:</label>
+                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                            </div>
+                            <div class="row justify-content-center">
+                                <div class="col-auto">
+                                    <button type="submit" class=" p-2 btn btn-success">Enviar</button>
+                                </div>
+                                <div class="col-auto">
+                                    <button type="reset" class="p-2 btn btn-danger">Borrar todo</button>
+                                </div>
+                            </div>
+                        </fieldset>
+                    </form>
+                    <!--------------FIN FORMULARIO-------------------->
+                </div>
+                <div class="col-md-6 px-5 text-center mt-5 animate__animated animate__bounceInRight">
+                    <!----------IFRAME MAP Y DESCRIPCION---------->
+                    <h2 class="display-4 fw-semibold">También podes encontrarme en...</h2>
+                    <div>
+                        <iframe class="container-fluid" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d26233.88394317901!2d-58.264185!3d-34.724458!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xd83d1c890f62db4f!2sPlaza%20Aristobulo%20del%20Valle!5e0!3m2!1ses-419!2sar!4v1676513211989!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                    <div class="container-fluid">
+                        <div class="my-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-alarm-fill" viewBox="0 0 16 16">
+                                <path d="M6 .5a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 0 1H9v1.07a7.001 7.001 0 0 1 3.274 12.474l.601.602a.5.5 0 0 1-.707.708l-.746-.746A6.97 6.97 0 0 1 8 16a6.97 6.97 0 0 1-3.422-.892l-.746.746a.5.5 0 0 1-.707-.708l.602-.602A7.001 7.001 0 0 1 7 2.07V1h-.5A.5.5 0 0 1 6 .5zm2.5 5a.5.5 0 0 0-1 0v3.362l-1.429 2.38a.5.5 0 1 0 .858.515l1.5-2.5A.5.5 0 0 0 8.5 9V5.5zM.86 5.387A2.5 2.5 0 1 1 4.387 1.86 8.035 8.035 0 0 0 .86 5.387zM11.613 1.86a2.5 2.5 0 1 1 3.527 3.527 8.035 8.035 0 0 0-3.527-3.527z"/>
+                            </svg>
+                            <i class="bi bi-alarm-fill">Día y Horario: Sabados de 10:00 a 17:00 hs.</i>
+                        </div>
+                        <div class="my-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt" viewBox="0 0 16 16">
+                                <path d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z"/>
+                                <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+                            </svg>
+                            <i class="bi bi-geo-alt">Av. Vicente López, B1878 Quilmes, Provincia de Buenos Aires</i>
+                        </div>
+                        <div class="my-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telephone-fill" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
+                            </svg>
+                            <i class="bi bi-telephone-fill">+54 9 11 5411-7459</i>
+                        </div>
+                        <div class="my-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope me-1" viewBox="0 0 16 16">
+                                <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z"/>
+                            </svg>
+                            <i class="bi bi-envelope"><a href="mailto:victorias.bakery.pasteles@gmail.com">victorias-bakery</a></i>
+                        </div>
+                    </div>
+                    <!------FIN IFRAME MAP Y DESCRIPCION---------->
+                </div>
+            </div>
+            <div class="container text-center container__qr">
+                <p class="fw-semibold">Escanea el código QR para contactarme por whatsapp:</p>
+                <img class="img-thumbnail  img-fluid rounded-3 container__qr--imagen" src="../img/qrcode_api.whatsapp.com.png" alt="código QR">
+            </div>
+        </section>
+        <!---------------FIN SECCIÓN-------------------->
+    </main>
+    <hr>
+    <!-------------------FOOTER------------------------->
+    <footer>
+        <div class="container-fluid mb-2">
+            <p> Seguime en mis redes sociales:</p>
+            <a href="https://api.whatsapp.com/send/?phone=1154117459&text&type=phone_number&app_absent=0"> <img src="../img/whatsapp.png" alt="Logo whatsapp"></a> 
+            <a href="https://www.facebook.com/profile.php?id=100063537760445"><img src="../img/facebook.png" alt="Logo facebook"></a> 
+            <a href="https://www.instagram.com/victoriasbakery.jvc/?igshid=MDM4ZDc5MmU%3D"><img src="../img/instagram.png" alt="Logo instagram"></a>  
+        </div>
+        <p class="text-bg-dark p-0 m-0">Copyrigt © 2023 Victoria's Bakery - Todos los Derechos Reservados - Desarrollado por Nicolás Capriz</p>  
+    </footer>
+    <!------------------FIN FOOTER------------------------->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
 </body>
 </html>
+
